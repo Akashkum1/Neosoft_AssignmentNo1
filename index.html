@@ -7,6 +7,7 @@
     <title>Vital partners</title>
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/ca2fcb13c8.js" crossorigin="anonymous"></script>
    
 </head>
 <body>
@@ -50,8 +51,22 @@
     </div>
     <!--Main body starts here-->
     <!--Section 1 starts here-->
-    <div class="d1">
-        <img src="img/hbg3.png" alt="photo">
+    <div class="vidcontent">
+        <div class="overlap">
+            
+            <div class="icon">
+                <i class="fab fa-youtube"></i>
+
+            </div>
+            <div class="vidtext">
+                <h2>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Similique architecto. af 4freafh faf yyjnsw</h2>
+                <a href="#">Contact Us</a>
+    
+            </div>
+
+            
+
+        </div>
     </div>
     <!--Section 2-->
     <div class="about">
@@ -76,16 +91,106 @@
         </div>
     </div>
     <!--Section 3 starts here-->
-    <div class="d2">
-        <img src="img/hbg4.png" alt="Section 3">
+    <div class="block">
+        <div class="overlap2">
+            <div class="info3">
+                <h1>How Vital Works</h1>
+                <h3>Step, Hop or Skip your way to happiness</h3><br>
+                <div class="chain">
+                    <span>1</span>
+                    <span>2</span>
+                    <span>3</span>
+                    <span>4</span>
+                    <span>5</span>
+                    <span>6</span>
+                </div><br>
+                <div class="chaininfo">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    </p>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Section 4 starts here-->
-    <div class="d3">
-        <img src="img/hbg5.jpg" alt="Section 4">
+    <div class="sec3">
+        <h2 >Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde amet error pariaturnostrum recusandae modi </h2>
+        <div class="card">
+            <div class="grid">
+                <div class="article">
+                    <img src="img/icon2.png" alt="icon">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, incidunt. Itaque, aspernatur debitis vel similique vero.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut ab illum eveniet illo voluptas magni reprehenderit modi possimus. Beatae magnam distinctio excepturi repellat porro.</p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+                <div class="article">
+                    <img src="img/icon3.png" alt="icon">
+                    <div class="text">
+                        <h3>Lorem ipsum dolor sit.</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, incidunt. Itaque, aspernatur debitis vel similique vero.</p>
+                        <br>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam ut ab illum eveniet illo voluptas magni reprehenderit modi possimus. Beatae magnam distinctio excepturi repellat porro.</p>
+                        <button>Get Started</button>
+                    </div>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Section 5 starts here-->
-    <div class="d4">
-        <img src="img/hbg7.png" alt="Section 4">
+    <div class="feedback">
+        <div class="overlap1">
+            <h1>What Our Clients Say~</h1>
+            <div class="cou">
+                <div class="slider">
+                    <div class="slide" id="s1">
+                        
+                        <div class="info1">
+                            <img src="img/i1.png" alt="Client 1">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellendus veritatis aperiam earum ipsum optio ratione 
+                                quibusdam. Quasi veritatis sequi asperiores.
+                            </p>
+                            <h2>~Chadwik Boseman</h2>
+                        </div>
+                    
+                        
+                        
+                    
+                    </div>
+                    <div class="slide" id="s1">
+                        
+                        <div class="info1">
+                            <img src="img/i2.png" alt="Client 1">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellendus veritatis aperiam earum ipsum optio ratione 
+                                quibusdam. Quasi veritatis sequi asperiores.
+                            </p>
+                            <h2>~abc wavv</h2>
+                        </div>
+                    
+                    </div>
+                    <div class="slide" id="s1">
+                        
+                        <div class="info1">
+                            <img src="img/i3.png" alt="Client 1">
+                            <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+                                Repellendus veritatis aperiam earum ipsum optio ratione 
+                                quibusdam. Quasi veritatis sequi asperiores.
+                            </p>
+                            <h2>~see ergtrh</h2>
+                        </div>
+                    </div>
+                </div>
+                <div class="navigation">
+                    <i class="fas fa-chevron-left prev"></i>
+                    <i class="fas fa-chevron-right next"></i>
+                </div>
+            </div>
+        </div>
     </div>
     <!--Section 5 starts here-->
     <div class="blog">
@@ -224,6 +329,18 @@
 
         ham.addEventListener('click', () =>{
             ml.classList.toggle('show');
+        });
+        const slider = document.querySelector('.slider');
+        const next = document.querySelector('.next');
+        const prev = document.querySelector('.prev');
+        var index=0;
+        next.addEventListener('click',function(){
+            index = (index <2)? index+1  : 2 ;
+            slider.style.transform = 'translate(' + (index) *  -33.33 + '%)';
+        });
+        prev.addEventListener('click',function(){
+            index = (index >0)? index-1  : 0 ;
+            slider.style.transform = 'translate(' + (index) *  -33.33 + '%)';
         });
     </script>
 
